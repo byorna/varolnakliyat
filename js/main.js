@@ -12,8 +12,11 @@
     address: "Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak, Kartal, İstanbul",
     domain: "https://varolnakliyat.com",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Fenerbah%C3%A7e+Mah.+I%C4%9Frip+Sok.+No%3A13%2F1+Kad%C4%B1k%C3%B6y+%C4%B0stanbul",
-    mapsEmbed: "",
+      "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul",
+    mapsEmbed:
+      "https://maps.google.com/maps?q=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul&hl=tr&z=16&output=embed",
+    latitude: 40.9346996,
+    longitude: 29.2089030,
   };
 
   window.VAROL_SITE = SITE;
@@ -130,6 +133,22 @@
     if (el.tagName === "A") el.href = `mailto:${SITE.email}`;
   });
 
+  document.querySelectorAll(".footer-contact ul").forEach((ul) => {
+    if (!ul.querySelector("[data-address]")) {
+      const addressLi = document.createElement("li");
+      addressLi.innerHTML =
+        '📍 <a href="#" data-maps-link target="_blank" rel="noopener noreferrer"><span data-address></span></a>';
+      ul.appendChild(addressLi);
+    }
+
+    if (!ul.querySelector("[data-maps-reviews]")) {
+      const reviewsLi = document.createElement("li");
+      reviewsLi.innerHTML =
+        '⭐ <a href="#" data-maps-link data-maps-reviews target="_blank" rel="noopener noreferrer">Google\'da yorumlar ve fotoğraflar</a>';
+      ul.appendChild(reviewsLi);
+    }
+  });
+
   document.querySelectorAll("[data-address]").forEach((el) => {
     el.textContent = SITE.address;
   });
@@ -140,5 +159,9 @@
       el.target = "_blank";
       el.rel = "noopener noreferrer";
     }
+  });
+
+  document.querySelectorAll("[data-maps-embed]").forEach((el) => {
+    el.src = SITE.mapsEmbed;
   });
 })();

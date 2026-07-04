@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/images/logo.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ContactPage","name":"Varol Nakliyat İletişim","url":"https://varolnakliyat.com/iletisim.html","mainEntity":{"@type":"MovingCompany","name":"Varol Nakliyat","telephone":"+905522002018","email":"info@varolnakliyat.com","address":{"@type":"PostalAddress","streetAddress":"Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak","addressLocality":"Kartal","addressRegion":"İstanbul","addressCountry":"TR"}}}
+  {"@context":"https://schema.org","@type":"ContactPage","name":"Varol Nakliyat İletişim","url":"https://varolnakliyat.com/iletisim.html","mainEntity":{"@type":"MovingCompany","name":"Varol Nakliyat","telephone":"+905522002018","email":"info@varolnakliyat.com","hasMap":"https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul","geo":{"@type":"GeoCoordinates","latitude":40.9346996,"longitude":29.2089030},"address":{"@type":"PostalAddress","streetAddress":"Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak","addressLocality":"Kartal","addressRegion":"İstanbul","addressCountry":"TR"}}}
   </script>
 </head>
 <body>
@@ -60,10 +60,14 @@
               <div class="contact-method-icon">✉️</div>
               <div><strong>E-posta</strong><span data-email>info@varolnakliyat.com</span></div>
             </a>
-            <div class="contact-method">
+            <a href="#" class="contact-method" data-maps-link target="_blank" rel="noopener noreferrer">
               <div class="contact-method-icon">📍</div>
-              <div><strong>Adres</strong><span data-address>Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak, Kartal, İstanbul</span></div>
-            </div>
+              <div>
+                <strong>Adres</strong>
+                <span data-address></span>
+                <span class="contact-method-meta">Google Maps'te yorumlar, fotoğraflar ve rota</span>
+              </div>
+            </a>
           </div>
         </div>
         <div class="form-card">
@@ -94,6 +98,24 @@
             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             <h3>Mesajınız Alındı!</h3>
             <p>En kısa sürede size dönüş yapacağız.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light map-section">
+      <div class="container">
+        <div class="map-section-header">
+          <h2>Konum</h2>
+          <p class="lead-text">Ofisimizi haritada görüntüleyin; müşteri yorumlarını okuyun ve işletme fotoğraflarına göz atın.</p>
+        </div>
+        <div class="map-panel">
+          <div class="map-container">
+            <iframe data-maps-embed title="Varol Nakliyat Konum Haritası" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <div class="map-actions">
+            <a href="#" data-maps-link target="_blank" rel="noopener noreferrer" class="btn btn-dark">Google Maps'te aç</a>
+            <p class="map-actions-note">Yorumlar, fotoğraflar, çalışma saatleri ve yol tarifi Google Maps üzerinden görüntülenir.</p>
           </div>
         </div>
       </div>
