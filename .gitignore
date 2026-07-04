@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+*.log
+.cursor/
+logo-onay-bekliyor/
+assets/images/logo-source.png
+assets/images/logo.svg.png

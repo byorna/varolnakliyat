@@ -10,9 +10,9 @@
   <meta property="og:url" content="https://varolnakliyat.com/teklif-al.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/images/logo.png".replace("logo.png","favicon.svg") if False else assets/images/logo.png
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260703">
+  <link rel="icon" type="image/png" href="assets/images/logo.png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/images/logo.png">
 </head>
 <body>
@@ -21,7 +21,7 @@
       <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Varol Nakliyat" class="logo-img"></a>
       <nav class="nav-desktop"><a href="index.html">Ana Sayfa</a><a href="hakkimizda.html">Hakkımızda</a><a href="hizmetler/index.html">Hizmetler</a><a href="sss.html">SSS</a><a href="iletisim.html">İletişim</a></nav>
       <div class="header-actions">
-        <a href="tel:+905517098875" class="header-phone" data-phone><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span data-phone>0551 709 88 75</span></a>
+        <a href="tel:+905522002018" class="header-phone" data-phone><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span data-phone>0552 200 20 18</span></a>
         <a href="teklif-al.html" class="btn btn-primary">Teklif Al</a>
         <button class="menu-toggle" aria-label="Menü"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       </div>
@@ -49,11 +49,13 @@
             <div class="feature-item"><div class="feature-check">3</div><div><h4>Teklif Sunumu</h4><p>Şeffaf, yazılı fiyat teklifi iletilir.</p></div></div>
             <div class="feature-item"><div class="feature-check">4</div><div><h4>Taşınma Günü</h4><p>Planlanan tarihte profesyonel taşıma.</p></div></div>
           </div>
-          <p style="margin-top:2rem">Acil taşınma mı? Doğrudan arayın: <a href="tel:+905517098875" data-phone style="color:var(--accent);font-weight:600">0551 709 88 75</a></p>
+          <p style="margin-top:2rem">Acil taşınma mı? Doğrudan arayın: <a href="tel:+905522002018" data-phone style="color:var(--accent);font-weight:600">0552 200 20 18</a></p>
         </div>
         <div class="form-card">
           <h3 style="margin-bottom:1.5rem;font-family:var(--font-display)">Teklif Formu</h3>
           <form class="quote-form">
+            <input type="hidden" name="access_key" value="">
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-row">
               <div class="form-group"><label for="name">Ad Soyad *</label><input type="text" id="name" name="name" required autocomplete="name"></div>
               <div class="form-group"><label for="phone">Telefon *</label><input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX" autocomplete="tel"></div>
@@ -90,8 +92,17 @@
               </div>
             </div>
             <div class="form-group"><label for="notes">Ek Notlar</label><textarea id="notes" name="notes" placeholder="Asansör durumu, kat bilgisi, özel eşyalar vb."></textarea></div>
-            <div class="form-group"><label><input type="checkbox" name="kvkk" required> <a href="kvkk.html">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.</label></div>
-            <button type="submit" class="btn btn-primary" style="width:100%">Teklif Talep Et</button>
+            <div class="form-group form-group-legal">
+              <label class="form-legal-label">
+                <input type="checkbox" name="kvkk" required>
+                <span><a href="kvkk.html">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.</span>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Teklif Talep Et</button>
+              <button type="button" class="btn btn-whatsapp" data-action="whatsapp-send">WhatsApp'tan Gönder</button>
+            </div>
+            <p class="form-actions-hint">E-posta ile talep gönderebilir veya WhatsApp üzerinden anında mesaj atabilirsiniz.</p>
           </form>
           <div class="form-success">
             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -106,8 +117,9 @@
   <footer class="site-footer">
     <div class="container footer-bottom" style="border:none"><span>© 2026 Varol Nakliyat</span></div>
   </footer>
-  <div class="whatsapp-float"><span class="whatsapp-tooltip">WhatsApp</span><a href="#" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.883 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><a href="tel:+905517098875" class="phone-float" aria-label="Telefon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a></div>
+  <div class="whatsapp-float"><span class="whatsapp-tooltip">WhatsApp</span><a href="#" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.883 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><a href="tel:+905522002018" class="phone-float" aria-label="Telefon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a></div>
   <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
+  <script src="js/form-config.js?v=1"></script>
+  <script src="js/form.js?v=2"></script>
 </body>
 </html>

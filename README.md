@@ -40,13 +40,22 @@ Site logosu: `assets/images/logo.png` (kaynak: `logo-onay-bekliyor/varolnakliyat
 
 `js/main.js` içindeki `SITE` objesinde:
 
-- `phone` / `phoneRaw` — **0551 709 88 75** / `+905517098875`
-- `whatsapp` — **905517098875**
+- `phone` / `phoneRaw` — **0552 200 20 18** / `+905522002018`
+- `whatsapp` — **905522002018**
+- `email` — **info@varolnakliyat.com**
 - `address` — **Fenerbahçe Mah. İğrip Sok. No:13/1 Kadıköy, İstanbul**
 
-## Form Backend
+## Form Backend (Web3Forms)
 
-Formlar şu an localStorage'a kaydediyor. Canlıya almadan önce Formspree, Netlify Forms veya kendi backend API'nize bağlayın.
+Teklif ve iletişim formları **Web3Forms** ile `info@varolnakliyat.com` adresine e-posta gönderir (ücretsiz plan).
+
+1. https://web3forms.com adresine gidin
+2. Alıcı e-posta: **info@varolnakliyat.com**
+3. Access key'i `js/form-config.js` dosyasındaki `accessKey` alanına yazın
+
+Her iki formda da:
+- **Teklif Talep Et / Gönder** → e-posta
+- **WhatsApp'tan Gönder** → wa.me ile önceden doldurulmuş mesaj
 
 ## Deploy
 
