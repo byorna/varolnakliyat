@@ -43,7 +43,7 @@ Site logosu: `assets/images/logo.png` (kaynak: `logo-onay-bekliyor/varolnakliyat
 - `phone` / `phoneRaw` — **0552 200 20 18** / `+905522002018`
 - `whatsapp` — **905522002018**
 - `email` — **info@varolnakliyat.com**
-- `address` — **Fenerbahçe Mah. İğrip Sok. No:13/1 Kadıköy, İstanbul**
+- `address` — **Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak, Kartal, İstanbul**
 
 ## Form Backend (Web3Forms)
 

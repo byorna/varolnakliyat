@@ -9,7 +9,7 @@
     phoneRaw: "+905522002018",
     whatsapp: "905522002018",
     email: "info@varolnakliyat.com",
-    address: "Fenerbahçe Mah. İğrip Sok. No:13/1 Kadıköy, İstanbul",
+    address: "Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak, Kartal, İstanbul",
     domain: "https://varolnakliyat.com",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Fenerbah%C3%A7e+Mah.+I%C4%9Frip+Sok.+No%3A13%2F1+Kad%C4%B1k%C3%B6y+%C4%B0stanbul",
