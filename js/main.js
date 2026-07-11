@@ -57,6 +57,7 @@
         const pastHero = !entry.isIntersecting;
         header.classList.toggle("scrolled", pastHero);
         header.classList.toggle("logo-visible", pastHero);
+        header.classList.toggle("header-dark", pastHero);
       };
 
       new IntersectionObserver(syncHomeHeader, {
