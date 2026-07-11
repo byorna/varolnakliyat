@@ -1597,6 +1597,31 @@ section { padding: var(--space-2xl) 0; }
   gap: 1.25rem;
 }
 
+.map-locations-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.map-location-title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--navy-900);
+}
+
+.map-actions-note-wide {
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .map-locations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .map-actions {
   display: flex;
   flex-direction: column;

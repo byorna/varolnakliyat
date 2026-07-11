@@ -9,15 +9,40 @@
     phoneRaw: "+905522002018",
     whatsapp: "905522002018",
     email: "info@varolnakliyat.com",
-    address: "Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak, Kartal, İstanbul",
     domain: "https://varolnakliyat.com",
-    mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul",
-    mapsEmbed:
-      "https://maps.google.com/maps?q=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul&hl=tr&z=16&output=embed",
-    latitude: 40.9346996,
-    longitude: 29.2089030,
+    locations: [
+      {
+        id: "kartal",
+        label: "Kartal",
+        address: "Uğurmumcu Mah. Kartal / İstanbul",
+        mapsUrl:
+          "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul",
+        mapsEmbed:
+          "https://maps.google.com/maps?q=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul&hl=tr&z=15&output=embed",
+        latitude: 40.9346996,
+        longitude: 29.2089030,
+      },
+      {
+        id: "atasehir",
+        label: "Ataşehir",
+        address: "Ataşehir / İstanbul",
+        mapsUrl:
+          "https://www.google.com/maps/search/?api=1&query=Ata%C5%9Fehir%2C+%C4%B0stanbul",
+        mapsEmbed:
+          "https://maps.google.com/maps?q=Ata%C5%9Fehir%2C+%C4%B0stanbul&hl=tr&z=14&output=embed",
+        latitude: 40.9923307,
+        longitude: 29.1244229,
+      },
+    ],
   };
+
+  const getLocation = (id) => SITE.locations.find((loc) => loc.id === id) || SITE.locations[0];
+
+  SITE.address = SITE.locations.map((loc) => loc.address).join(" · ");
+  SITE.mapsUrl = SITE.locations[0].mapsUrl;
+  SITE.mapsEmbed = SITE.locations[0].mapsEmbed;
+  SITE.latitude = SITE.locations[0].latitude;
+  SITE.longitude = SITE.locations[0].longitude;
 
   window.VAROL_SITE = SITE;
 
@@ -135,26 +160,30 @@
 
   document.querySelectorAll(".footer-contact ul").forEach((ul) => {
     if (!ul.querySelector("[data-address]")) {
-      const addressLi = document.createElement("li");
-      addressLi.innerHTML =
-        '📍 <a href="#" data-maps-link target="_blank" rel="noopener noreferrer"><span data-address></span></a>';
-      ul.appendChild(addressLi);
+      SITE.locations.forEach((loc) => {
+        const addressLi = document.createElement("li");
+        addressLi.innerHTML =
+          `📍 <a href="#" data-maps-link data-location="${loc.id}" target="_blank" rel="noopener noreferrer"><span data-address data-location="${loc.id}"></span></a>`;
+        ul.appendChild(addressLi);
+      });
     }
 
     if (!ul.querySelector("[data-maps-reviews]")) {
       const reviewsLi = document.createElement("li");
       reviewsLi.innerHTML =
-        '⭐ <a href="#" data-maps-link data-maps-reviews target="_blank" rel="noopener noreferrer">Google\'da yorumlar ve fotoğraflar</a>';
+        '⭐ <a href="#" data-maps-link data-maps-reviews data-location="kartal" target="_blank" rel="noopener noreferrer">Google\'da yorumlar ve fotoğraflar</a>';
       ul.appendChild(reviewsLi);
     }
   });
 
   document.querySelectorAll("[data-address]").forEach((el) => {
-    el.textContent = SITE.address;
+    const loc = el.dataset.location ? getLocation(el.dataset.location) : null;
+    el.textContent = loc ? loc.address : SITE.address;
   });
 
   document.querySelectorAll("[data-maps-link]").forEach((el) => {
-    el.href = SITE.mapsUrl;
+    const loc = getLocation(el.dataset.location || SITE.locations[0].id);
+    el.href = loc.mapsUrl;
     if (!el.getAttribute("target")) {
       el.target = "_blank";
       el.rel = "noopener noreferrer";
@@ -162,6 +191,7 @@
   });
 
   document.querySelectorAll("[data-maps-embed]").forEach((el) => {
-    el.src = SITE.mapsEmbed;
+    const loc = getLocation(el.dataset.location || SITE.locations[0].id);
+    el.src = loc.mapsEmbed;
   });
 })();

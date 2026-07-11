@@ -43,8 +43,8 @@ Site logosu: `assets/images/logo.png` (kaynak: `logo-onay-bekliyor/varolnakliyat
 - `phone` / `phoneRaw` — **0552 200 20 18** / `+905522002018`
 - `whatsapp` — **905522002018**
 - `email` — **info@varolnakliyat.com**
-- `address` — **Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak, Kartal, İstanbul**
-- `mapsUrl` / `mapsEmbed` — Google Maps (Kartal konumu)
+- `locations` — **Uğurmumcu Mah. Kartal / İstanbul** ve **Ataşehir / İstanbul**
+- `mapsUrl` / `mapsEmbed` — her lokasyon için ayrı Google Maps bağlantısı
 
 ## Form Backend (Web3Forms)
 

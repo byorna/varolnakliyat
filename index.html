@@ -37,14 +37,51 @@
     "email": "info@varolnakliyat.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Uğurmumcu Mah. Fatih Sultan Mehmet Cad. Moda Sokak",
-      "addressLocality": "Kartal",
+      "addressLocality": "İstanbul",
       "addressRegion": "İstanbul",
       "addressCountry": "TR"
     },
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Varol Nakliyat — Kartal",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Uğurmumcu Mah.",
+          "addressLocality": "Kartal",
+          "addressRegion": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.9346996,
+          "longitude": 29.2089030
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul"
+      },
+      {
+        "@type": "Place",
+        "name": "Varol Nakliyat — Ataşehir",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ataşehir",
+          "addressRegion": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.9923307,
+          "longitude": 29.1244229
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Ata%C5%9Fehir%2C+%C4%B0stanbul"
+      }
+    ],
     "areaServed": { "@type": "Country", "name": "Türkiye" },
-    "sameAs": ["https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul"],
-    "hasMap": "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Fatih+Sultan+Mehmet+Cad.+Moda+Sokak%2C+Kartal%2C+%C4%B0stanbul",
+    "sameAs": [
+      "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul",
+      "https://www.google.com/maps/search/?api=1&query=Ata%C5%9Fehir%2C+%C4%B0stanbul"
+    ],
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 40.9346996,
@@ -300,7 +337,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Varol Nakliyat" class="logo-img"></a>
-        <p>İstanbul Kartal merkezli nakliyat firması. Evden eve, ofis ve şehirler arası taşımacılıkta 2012 yılından bu yana hizmet veriyoruz.</p>
+        <p>İstanbul Kartal ve Ataşehir'de hizmet veren nakliyat firması. Evden eve, ofis ve şehirler arası taşımacılıkta 2012 yılından bu yana yanınızdayız.</p>
       </div>
       <div class="footer-col">
         <h4>Hizmetler</h4>
@@ -325,8 +362,9 @@
         <ul>
           <li>📞 <a href="tel:+905522002018" data-phone>0552 200 20 18</a></li>
           <li>✉️ <a href="mailto:info@varolnakliyat.com" data-email>info@varolnakliyat.com</a></li>
-          <li>📍 <a href="#" data-maps-link target="_blank" rel="noopener noreferrer"><span data-address></span></a></li>
-          <li>⭐ <a href="#" data-maps-link data-maps-reviews target="_blank" rel="noopener noreferrer">Google'da yorumlar ve fotoğraflar</a></li>
+          <li>📍 <a href="#" data-maps-link data-location="kartal" target="_blank" rel="noopener noreferrer"><span data-address data-location="kartal"></span></a></li>
+          <li>📍 <a href="#" data-maps-link data-location="atasehir" target="_blank" rel="noopener noreferrer"><span data-address data-location="atasehir"></span></a></li>
+          <li>⭐ <a href="#" data-maps-link data-maps-reviews data-location="kartal" target="_blank" rel="noopener noreferrer">Google'da yorumlar ve fotoğraflar</a></li>
           <li>🕐 7/24 Hizmet</li>
         </ul>
       </div>
