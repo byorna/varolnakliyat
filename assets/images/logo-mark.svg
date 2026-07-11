@@ -1,19 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 120" role="img" aria-label="Varol Nakliyat amblem">
-  <defs>
-    <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a5c4f"/>
-      <stop offset="100%" stop-color="#0f3d35"/>
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d4a24c"/>
-      <stop offset="100%" stop-color="#e8c078"/>
-    </linearGradient>
-  </defs>
-  <g transform="translate(8, 10)">
-    <rect x="0" y="0" width="100" height="100" rx="22" fill="url(#markGrad)"/>
-    <path d="M50 18 L78 34 L62 82 L50 72 L38 82 L22 34 Z" fill="none" stroke="url(#accentGrad)" stroke-width="3.5" stroke-linejoin="round"/>
-    <path d="M34 48 L50 68 L66 36" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="68" y="68" width="18" height="14" rx="3" fill="url(#accentGrad)" opacity="0.95"/>
-    <path d="M71 75 H83" stroke="#0f3d35" stroke-width="2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-label="Varol Nakliyat amblem">
+  <!-- Renkler kaynak görselden: mavi #A8C9E2, turuncu #AF381D -->
+  <g>
+    <!-- V -->
+    <path fill="#A8C9E2" d="M46 96 L46 440 L176 440 L286 46 L246 36 L154 378 L88 84 Z"/>
+
+    <!-- A -->
+    <path fill="#AF381D" d="M538 20 L296 440 L352 440 L538 176 Z"/>
+    <path fill="#AF381D" d="M538 20 L696 440 L652 440 L538 176 Z"/>
+
+    <!-- Çatı -->
+    <path fill="#A8C9E2" d="M378 168 L538 58 L698 168 L656 168 L538 104 L400 168 Z"/>
+
+    <!-- Pencere -->
+    <rect fill="#A8C9E2" x="468" y="328" width="46" height="46" rx="2"/>
+    <rect fill="#A8C9E2" x="524" y="328" width="46" height="46" rx="2"/>
+    <rect fill="#A8C9E2" x="468" y="384" width="46" height="46" rx="2"/>
+    <rect fill="#A8C9E2" x="524" y="384" width="46" height="46" rx="2"/>
   </g>
 </svg>

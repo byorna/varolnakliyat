@@ -255,28 +255,29 @@ h1, h2, h3, h4, h5 {
 }
 
 .logo-img {
-  height: 56px;
+  height: auto;
+  max-height: 56px;
   width: auto;
-  max-width: min(220px, 52vw);
+  max-width: min(200px, 52vw);
   display: block;
   object-fit: contain;
   background: transparent;
 }
 
 .site-header .logo-img {
-  height: 48px;
+  max-height: 48px;
   margin-top: 0;
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
-  transition: height var(--transition), filter var(--transition);
+  transition: max-height var(--transition), filter var(--transition);
 }
 
 .site-header.scrolled .logo-img {
-  height: 44px;
+  max-height: 44px;
   filter: none;
 }
 
 .footer-brand .logo-img {
-  height: 64px;
+  max-height: 64px;
   max-width: 240px;
 }
 
@@ -501,8 +502,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-logo {
-  width: min(88%, 340px);
+  width: min(72%, 280px);
   height: auto;
+  max-height: 240px;
   object-fit: contain;
   background: transparent;
   filter: drop-shadow(0 16px 40px rgba(0, 0, 0, 0.35));
