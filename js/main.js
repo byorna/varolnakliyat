@@ -22,23 +22,12 @@
         latitude: 40.9346996,
         longitude: 29.2089030,
       },
-      {
-        id: "atasehir",
-        label: "Ataşehir",
-        address: "Ataşehir / İstanbul",
-        mapsUrl:
-          "https://www.google.com/maps/search/?api=1&query=Ata%C5%9Fehir%2C+%C4%B0stanbul",
-        mapsEmbed:
-          "https://maps.google.com/maps?q=Ata%C5%9Fehir%2C+%C4%B0stanbul&hl=tr&z=14&output=embed",
-        latitude: 40.9923307,
-        longitude: 29.1244229,
-      },
     ],
   };
 
   const getLocation = (id) => SITE.locations.find((loc) => loc.id === id) || SITE.locations[0];
 
-  SITE.address = SITE.locations.map((loc) => loc.address).join(" · ");
+  SITE.address = SITE.locations[0].address;
   SITE.mapsUrl = SITE.locations[0].mapsUrl;
   SITE.mapsEmbed = SITE.locations[0].mapsEmbed;
   SITE.latitude = SITE.locations[0].latitude;
