@@ -5,3 +5,10 @@ Thumbs.db
 logo-onay-bekliyor/
 assets/images/logo-source.png
 assets/images/logo.svg.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
