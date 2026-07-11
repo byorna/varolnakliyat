@@ -10,17 +10,21 @@
     whatsapp: "905522002018",
     email: "info@varolnakliyat.com",
     domain: "https://varolnakliyat.com",
+    mapsUrl: "https://maps.app.goo.gl/7VKdnZBWZqM7VThV8",
+    mapsEmbed:
+      "https://maps.google.com/maps?q=40.9325051,29.2094264&hl=tr&z=17&output=embed",
+    latitude: 40.9325051,
+    longitude: 29.2094264,
     locations: [
       {
         id: "kartal",
         label: "Kartal",
         address: "Uğurmumcu Mah. Kartal / İstanbul",
-        mapsUrl:
-          "https://www.google.com/maps/search/?api=1&query=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul",
+        mapsUrl: "https://maps.app.goo.gl/7VKdnZBWZqM7VThV8",
         mapsEmbed:
-          "https://maps.google.com/maps?q=U%C4%9Furmumcu+Mah.+Kartal%2C+%C4%B0stanbul&hl=tr&z=15&output=embed",
-        latitude: 40.9346996,
-        longitude: 29.2089030,
+          "https://maps.google.com/maps?q=40.9325051,29.2094264&hl=tr&z=17&output=embed",
+        latitude: 40.9325051,
+        longitude: 29.2094264,
       },
     ],
   };
@@ -28,10 +32,6 @@
   const getLocation = (id) => SITE.locations.find((loc) => loc.id === id) || SITE.locations[0];
 
   SITE.address = SITE.locations[0].address;
-  SITE.mapsUrl = SITE.locations[0].mapsUrl;
-  SITE.mapsEmbed = SITE.locations[0].mapsEmbed;
-  SITE.latitude = SITE.locations[0].latitude;
-  SITE.longitude = SITE.locations[0].longitude;
 
   window.VAROL_SITE = SITE;
 
