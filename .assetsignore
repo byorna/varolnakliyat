@@ -1,0 +1,6 @@
+whatsapp-bot/
+.git/
+.cursor/
+logo-onay-bekliyor/
+*.log
+.DS_Store
