@@ -5,3 +5,6 @@ Thumbs.db
 logo-onay-bekliyor/
 assets/images/logo-source.png
 assets/images/logo.svg.png
+whatsapp-bot/node_modules/
+whatsapp-bot/.wrangler/
+whatsapp-bot/.dev.vars

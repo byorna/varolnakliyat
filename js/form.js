@@ -223,6 +223,12 @@
 
       try {
         await sendFormEmail(form, data);
+        if (typeof window.varolTrackEvent === "function") {
+          window.varolTrackEvent("form_submit", {
+            event_category: "engagement",
+            form_name: form.classList.contains("quote-form") ? "quote" : "contact",
+          });
+        }
         showSuccess(form);
       } catch (error) {
         showError(
