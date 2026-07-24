@@ -1,5 +1,6 @@
 whatsapp-bot/
 .git/
+.wrangler/
 .cursor/
 logo-onay-bekliyor/
 *.log
