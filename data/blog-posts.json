@@ -7,7 +7,8 @@
       "date": "2026-08-02",
       "categorySlug": "genel",
       "readTime": "8 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/ofis-tasinma-planlama-rehberi.webp"
     },
     {
       "slug": "tasinma-sirasinda-esya-depolama-rehberi",
@@ -16,7 +17,8 @@
       "date": "2026-08-02",
       "categorySlug": "genel",
       "readTime": "7 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/tasinma-sirasinda-esya-depolama-rehberi.webp"
     },
     {
       "slug": "apartman-tasinma-nakliyat-rehberi",
@@ -25,7 +27,8 @@
       "date": "2026-08-01",
       "categorySlug": "asansorlu",
       "readTime": "7 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/apartman-tasinma-nakliyat-rehberi.webp"
     },
     {
       "slug": "tam-hizmet-nakliyat-vs-kendin-yap-tasinma",
@@ -34,7 +37,8 @@
       "date": "2026-08-01",
       "categorySlug": "rehber",
       "readTime": "8 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/tam-hizmet-nakliyat-vs-kendin-yap-tasinma.webp"
     },
     {
       "slug": "kirilgan-esya-tasima-rehberi",
@@ -43,7 +47,8 @@
       "date": "2026-08-01",
       "categorySlug": "ipuclari",
       "readTime": "8 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/kirilgan-esya-tasima-rehberi.webp"
     },
     {
       "slug": "tasinma-paketleme-rehberi",
@@ -52,7 +57,8 @@
       "date": "2026-08-01",
       "categorySlug": "ipuclari",
       "readTime": "8 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/tasinma-paketleme-rehberi.webp"
     },
     {
       "slug": "nakliyat-fiyatlari-2026-rehberi",
@@ -61,7 +67,8 @@
       "date": "2026-07-31",
       "categorySlug": "rehber",
       "readTime": "9 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/nakliyat-fiyatlari-2026-rehberi.webp"
     },
     {
       "slug": "tasinma-gunu-kontrol-listesi",
@@ -70,7 +77,8 @@
       "date": "2026-07-31",
       "categorySlug": "ipuclari",
       "readTime": "7 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/tasinma-gunu-kontrol-listesi.webp"
     },
     {
       "slug": "nakliyat-sigortasi-rehberi",
@@ -79,7 +87,8 @@
       "date": "2026-07-31",
       "categorySlug": "rehber",
       "readTime": "8 dk",
-      "published": true
+      "published": true,
+      "image": "../assets/images/blog/nakliyat-sigortasi-rehberi.webp"
     },
     {
       "slug": "profesyonel-nakliyat-firmasi-nasil-secilir-eksiksiz-kilavuz",
