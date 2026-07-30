@@ -11,6 +11,7 @@
     "evden-eve": "Evden Eve",
     "sehirler-arasi": "Şehirler Arası",
     "parca-esya": "Parça Eşya",
+    asansorlu: "Asansörlü Nakliyat",
     genel: "Genel",
   };
 
