@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /kartvizit.html
+Disallow: /brosur.html
+Disallow: /kvkk.html
 
 Sitemap: https://varolnakliyat.com/sitemap.xml

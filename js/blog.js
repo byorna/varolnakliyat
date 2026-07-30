@@ -51,7 +51,7 @@
   function renderCard(post) {
     const category = CATEGORY_LABELS[post.categorySlug] || post.category || "Blog";
     const imageHtml = post.image
-      ? `<img src="${escapeHtml(post.image)}" alt="" loading="lazy">`
+      ? `<img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" loading="lazy">`
       : `<div class="blog-card-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg></div>`;
 
     return `
