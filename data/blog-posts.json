@@ -1,6 +1,87 @@
 {
   "posts": [
     {
+      "slug": "ofis-tasinma-planlama-rehberi",
+      "title": "Ofis taşınma planlama rehberi: iş kesintisi olmadan",
+      "excerpt": "Ofis taşınması nasıl planlanır? IT ekipmanı ve arşiv koruması, departman etiketleme, hafta sonu taşıma ve kurumsal nakliyat seçimi.",
+      "date": "2026-08-02",
+      "categorySlug": "genel",
+      "readTime": "8 dk",
+      "published": true
+    },
+    {
+      "slug": "tasinma-sirasinda-esya-depolama-rehberi",
+      "title": "Taşınma sırasında eşya depolama rehberi",
+      "excerpt": "Taşınırken depo kiralama, tadilat dönemi saklama, m³ bazlı fiyatlandırma ve iklim kontrollü depolama seçenekleri.",
+      "date": "2026-08-02",
+      "categorySlug": "genel",
+      "readTime": "7 dk",
+      "published": true
+    },
+    {
+      "slug": "apartman-tasinma-nakliyat-rehberi",
+      "title": "Apartman taşınma rehberi: yüksek kat ve dar asansör çözümleri",
+      "excerpt": "Dar asansörlü binalar, yüksek katlı apartman taşıma, dış cephe asansörü maliyeti ve site izin süreci rehberi.",
+      "date": "2026-08-01",
+      "categorySlug": "asansorlu",
+      "readTime": "7 dk",
+      "published": true
+    },
+    {
+      "slug": "tam-hizmet-nakliyat-vs-kendin-yap-tasinma",
+      "title": "Tam hizmet nakliyat vs kendin yap taşınma: hangisi değer?",
+      "excerpt": "Tam hizmet nakliyat avantajları, kendin yap taşınma dezavantajları, maliyet karşılaştırması ve hangi durumda hangisi mantıklı.",
+      "date": "2026-08-01",
+      "categorySlug": "rehber",
+      "readTime": "8 dk",
+      "published": true
+    },
+    {
+      "slug": "kirilgan-esya-tasima-rehberi",
+      "title": "Kırılgan eşya taşıma rehberi: antika, cam ve elektronik",
+      "excerpt": "Kırılgan ve değerli eşya taşırken nakliyat firması seçimi, özel paketleme protokolleri, envanter ve sigorta rehberi.",
+      "date": "2026-08-01",
+      "categorySlug": "ipuclari",
+      "readTime": "8 dk",
+      "published": true
+    },
+    {
+      "slug": "tasinma-paketleme-rehberi",
+      "title": "Taşınma paketleme rehberi: eşya paketleme teknikleri",
+      "excerpt": "Taşınırken eşyaları nasıl paketlemelisiniz? Kırılgan eşya, elektronik, mobilya ve oda oda paketleme teknikleri.",
+      "date": "2026-08-01",
+      "categorySlug": "ipuclari",
+      "readTime": "8 dk",
+      "published": true
+    },
+    {
+      "slug": "nakliyat-fiyatlari-2026-rehberi",
+      "title": "Nakliyat fiyatları 2026 rehberi: şehir içi ve şehirlerarası",
+      "excerpt": "2026 nakliyat fiyatları: İstanbul şehir içi 1+1, 2+1 aralıkları, şehirlerarası karşılaştırma ve fiyat hesaplama faktörleri.",
+      "date": "2026-07-31",
+      "categorySlug": "rehber",
+      "readTime": "9 dk",
+      "published": true
+    },
+    {
+      "slug": "tasinma-gunu-kontrol-listesi",
+      "title": "Taşınma günü kontrol listesi: adım adım rehber",
+      "excerpt": "Taşınma günü nasıl geçer? Ekip gelmeden önce, yükleme sırasında ve teslimatta yapılması gerekenlerin kontrol listesi.",
+      "date": "2026-07-31",
+      "categorySlug": "ipuclari",
+      "readTime": "7 dk",
+      "published": true
+    },
+    {
+      "slug": "nakliyat-sigortasi-rehberi",
+      "title": "Nakliyat sigortası rehberi: kapsam, istisnalar ve tazminat",
+      "excerpt": "Nakliyat sigortası ne işe yarar? Teminat türleri, kapsam dışı hasarlar, tazminat reddi sebepleri ve poliçe kontrol listesi.",
+      "date": "2026-07-31",
+      "categorySlug": "rehber",
+      "readTime": "8 dk",
+      "published": true
+    },
+    {
       "slug": "profesyonel-nakliyat-firmasi-nasil-secilir-eksiksiz-kilavuz",
       "title": "Profesyonel nakliyat firması nasıl seçilir: Eksiksiz kılavuz",
       "excerpt": "K3 belgesi, sigorta kapsamı, fiyat karşılaştırması, sözleşme maddeleri ve taşınma günü kontrol protokolü. Profesyonel nakliyat firması seçimi için eksiksiz rehber.",
