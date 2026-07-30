@@ -2567,15 +2567,35 @@ a, button, .btn, .service-card, .service-link {
   overflow: hidden;
   border: 1px solid var(--gray-200);
   box-shadow: var(--shadow-card);
-  background: var(--navy-900);
+  background: var(--gray-50);
 }
 
 .blog-hero-image img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 480px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.sidebar-stack .sidebar-card > p {
+  margin: 0;
+  padding: 1rem 1.25rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+.sidebar-stack .sidebar-card > .btn {
+  margin: 0 1rem 1rem;
+  width: calc(100% - 2rem);
+}
+
+.sidebar-stack .sidebar-card h3 {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .blog-article a {
