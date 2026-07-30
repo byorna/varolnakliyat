@@ -2561,6 +2561,34 @@ a, button, .btn, .service-card, .service-link {
   line-height: 1.6;
 }
 
+.blog-hero-image {
+  margin: 0 0 2.5rem;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-card);
+  background: var(--navy-900);
+}
+
+.blog-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.blog-article a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.blog-article a:hover {
+  color: var(--navy-900);
+}
+
 .sidebar-stack {
   display: grid;
   gap: 1rem;
