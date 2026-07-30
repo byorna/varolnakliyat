@@ -40,6 +40,13 @@
       .sort((a, b) => new Date(b.date) - new Date(a.date));
   }
 
+  function activateReveals(container) {
+    if (!container) return;
+    container.querySelectorAll(".reveal, .fade-up").forEach((el) => {
+      el.classList.add("is-visible", "visible");
+    });
+  }
+
   function renderCard(post) {
     const category = CATEGORY_LABELS[post.categorySlug] || post.category || "Blog";
     const imageHtml = post.image
@@ -47,7 +54,7 @@
       : `<div class="blog-card-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg></div>`;
 
     return `
-      <article class="blog-card reveal" data-reveal data-category="${escapeHtml(post.categorySlug || "genel")}">
+          <article class="blog-card" data-category="${escapeHtml(post.categorySlug || "genel")}">
         <a href="posts/${escapeHtml(post.slug)}.html" class="blog-card-link">
           <div class="blog-card-media">${imageHtml}</div>
           <div class="blog-card-body">
@@ -66,7 +73,7 @@
 
   function renderEmptyState() {
     return `
-      <div class="blog-empty reveal" data-reveal>
+      <div class="blog-empty">
         <div class="blog-empty-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
@@ -130,6 +137,7 @@
 
       if (!posts.length) {
         grid.innerHTML = renderEmptyState();
+        activateReveals(grid);
         if (filtersSlot) filtersSlot.innerHTML = "";
         return;
       }
@@ -137,9 +145,11 @@
       const categories = [...new Set(posts.map((post) => post.categorySlug).filter(Boolean))];
       if (filtersSlot) filtersSlot.innerHTML = renderFilters(categories);
       grid.innerHTML = posts.map(renderCard).join("");
+      activateReveals(grid);
       bindFilters(root);
     } catch (error) {
       grid.innerHTML = renderEmptyState();
+      activateReveals(grid);
       if (filtersSlot) filtersSlot.innerHTML = "";
     }
   }
