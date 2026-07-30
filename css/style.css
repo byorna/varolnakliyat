@@ -2586,7 +2586,16 @@ a, button, .btn, .service-card, .service-link {
   color: var(--gray-600);
 }
 
-.sidebar-stack .sidebar-card > .btn {
+.btn-block {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sidebar-stack .sidebar-card > .btn.btn-block {
   margin: 0 1rem 1rem;
   width: calc(100% - 2rem);
 }
@@ -2642,12 +2651,6 @@ a, button, .btn, .service-card, .service-link {
 .sidebar-stack {
   display: grid;
   gap: 1rem;
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-  text-align: center;
 }
 
 @media (max-width: 1024px) {
