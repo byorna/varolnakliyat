@@ -1,0 +1,17 @@
+name = "varol-whatsapp-bot"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# WhatsApp oturum durumu (telefon → konuşma state)
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "8064da15921e45f3997a913473e0edd6"
+
+[vars]
+COMPANY_NAME = "Varol Nakliyat"
+COMPANY_PHONE_DISPLAY = "0552 200 20 18"
+
+# wrangler secret put WHATSAPP_TOKEN
+# wrangler secret put WHATSAPP_VERIFY_TOKEN
+# wrangler secret put WHATSAPP_PHONE_NUMBER_ID
+# wrangler secret put NOTIFY_WEBHOOK_URL   (opsiyonel)
